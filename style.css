@@ -1,0 +1,455 @@
+/* Google-Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F5F9;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    position: sticky;
+    top: 0;
+  height: 80px;
+  
+  background-color: white;
+  border: 1px;
+  border-color: #000;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #6E39CB;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  
+}
+
+
+/* nav-icons */
+
+.nav-icon{
+  margin-left: 500px;
+}
+
+.message-icon, .notification-icon{
+  margin-left:20px ;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+.group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 220px;
+}
+
+.input {
+  width: 220px;
+  height: 35px;
+  padding-left: 40px;
+  border-radius: 30px;
+  border: 1px solid #DBDCDE;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 1.5px #2b2c37;
+}
+
+.input::placeholder {
+  color: #bdbecb;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  width: 18px;
+  height: 18px;
+  fill: #bdbecb;
+  pointer-events: none;
+}
+
+.main-container{
+  padding-bottom:50px;
+}
+/* =========================
+   SIDEBAR
+========================= */
+.left-container {
+    position: sticky;
+    top: 0;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #E1E4EA;
+  color: #3A3541;
+  overflow:auto;
+}
+
+/* Sidebar menu */
+.sidebar-menu > li {
+  padding-left: 21px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 8px;
+  color: #3A3541;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+}
+
+.sidebar-menu > li.active > a {
+  background-color: #DECCFE;
+  color: #6E39CB;
+}
+
+.sidebar-menu > li.active > a::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: #6E39CB;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.child-menu a {
+  color: #6E39CB;
+  padding-left: 12px;
+}
+
+.sidebar-open-icon,
+.sidebar-close-icon {
+  margin-left: auto;
+}
+
+/* User card */
+.sb-user-card {
+  width: 178;
+height: 55;
+border-radius: 8px;
+opacity: 1;
+ padding-bottom: 20px;
+}
+
+
+/* =========================
+   ACTIVE USER CARD
+========================= */
+.active-user {
+  margin-top:70px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  padding: 20px;
+}
+
+/* Title */
+.active-user-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  white-space: nowrap;
+}
+
+/* =========================
+   PAGE VIEW
+========================= */
+.page-view-count {
+  font-weight: 700;
+  font-size: 70px;
+  color: #6E39CB;
+}
+
+.page-view-count-lable {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.22px;
+  margin-top: 10px;
+}
+
+.page-view-count-lable img {
+  width: 18px;
+}
+
+/* =========================
+   ACTIVE USER GRAPH
+========================= */
+.active-user-graph img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+.cards {
+  margin-top: 40px;
+}
+
+.stat-card {
+  height: 162px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card title */
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Card value */
+.card-content p {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-content img {
+  margin-top: 8px;
+}
+
+/* =========================
+   SALES BY AGE
+========================= */
+.sales-by-age {
+  margin-top:30px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  padding: 20px;
+
+}
+
+.sales-by-age img {
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   RIGHT COLUMN
+========================= */
+
+
+/* Earning */
+.earning{
+    width: 270px;
+    height: 344px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px #00000026;
+    padding-left:10px ;
+padding-top:10px ;
+padding-bottom:10px ;
+padding-right:10px ;
+background-color: white;
+}
+
+.earning-title{
+    font-size: 20.25px;
+
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+.earning-amount{
+    
+    color: #6E39CB;
+    text-align: center;
+
+}
+
+.earning-amount h4{
+font-size: 64px;
+    font-weight: 700;
+    font-style: bold;
+        margin-top: 25px;
+}
+
+.earning-mini-lable{
+        font-size: 18px;
+        font-weight: 500;
+        color: #89868D;
+        text-align: center;
+
+}
+
+.earning-mini-lable p{
+    margin-top: 35px;
+}
+
+
+.earning-withdraw{
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.earning-withdraw p{
+    margin-top: 35px;
+}
+
+/* Earning-Item */
+.earning-item{
+ width: 270px;
+    height: 344px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px #00000026;
+    padding-left:30px ;
+padding-top:30px ;
+padding-bottom:30px ;
+padding-right:30px ;
+background-color: white;
+}
+
+.earning-item-title{
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+
+.earning-item-name h5{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+  font-size: 18px;
+  color: #3A3541;
+}
+
+.earning-item-name h6{
+  font-size: 14px;
+  color: #89868D;
+  
+}
+
+.earning-item-arrow-icon{
+  margin-left: 20px;
+}
+
+ .item-2, .item-3{
+margin-top:40px;
+}
+
+
+/* Impression */
+.impression{
+  width: 270px;
+height: 287px;
+ margin-top: 40px;
+    margin-bottom: 10px;
+border-radius: 8px;
+opacity: 1;
+box-shadow: 0px 0px 4px 0px #00000026;
+background-color: white;
+
+}
+
+.impression h4{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
