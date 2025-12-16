@@ -89,11 +89,12 @@ body {
 .title {
   font-weight: 700;
   font-size: 20px;
+padding: 0;
   color: #6E39CB;
-  margin-top: 30px;
   display: flex;
   align-items: center;
   gap: 100px;
+  justify-content: space-between;
   
 }
 
@@ -101,7 +102,7 @@ body {
 /* nav-icons */
 
 .nav-icon{
-  margin-left: 500px;
+  padding-right: 50px;
 }
 
 .message-icon, .notification-icon{
@@ -149,6 +150,7 @@ body {
    SIDEBAR
 ========================= */
 .left-container {
+  padding: 0;
     position: sticky;
     top: 0;
   height: 100vh;

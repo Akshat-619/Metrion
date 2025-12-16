@@ -23,11 +23,11 @@
 
 
     <!-- ================= MAIN LAYOUT ================= -->
-    <div class="container-fluid">
+    <div class="container-fluid  px-0">
         <div class="row min-vh-100 ">
 
             <!-- ================= LEFT SIDEBAR ================= -->
-            <div class="col-2 ps-0 ">
+            <div class="col-2 pe-0 ">
                 <div class=" left-container d-flex flex-column">
                     <!-- Logo -->
                     <div class="d-flex w-100 justify-content-center">
@@ -87,10 +87,10 @@
                 </div>
             </div>
             <!-- ================= CENTER MAIN ================= -->
-            <div class="col-10 main-container">
+            <div class="col-10 p-0 main-container">
                 <!-- ================= HEADER ================= -->
-                <div class="header d-flex  w-100">
-                    <div class="d-flex align-items-center title">
+                <div class="header px-3 d-flex  w-100">
+                    <div class="d-flex w-100 align-items-center title">
 
                         <!-- Title -->
                         <h2> <b>DASHBOARD</b></h2>
@@ -140,213 +140,215 @@
 
                     </div>
                 </div>
+                <div class="px-3">
 
-                <div class="row">
+                    <div class="row">
 
-                    <div class="col-9">
-                        <!-- Active User Card -->
-                        <div class="active-user">
+                        <div class="col-9">
+                            <!-- Active User Card -->
+                            <div class="active-user">
 
-                            <!-- Title -->
-                            <div class="active-user-title">
-                                <h4>Active users right now</h4>
+                                <!-- Title -->
+                                <div class="active-user-title">
+                                    <h4>Active users right now</h4>
+                                </div>
+
+                                <!-- Content Row -->
+                                <div class="row">
+
+                                    <!-- Left Info -->
+                                    <div class="col-3">
+
+                                        <!-- Page-View Count -->
+                                        <div class="page-view-count">
+                                            <p>300</p>
+                                        </div>
+
+                                        <!-- Page-View Label -->
+                                        <div class="page-view-count-lable">
+                                            <p>
+                                                <img src="page view icon.png" alt="">
+                                                Page views per minute
+                                            </p>
+                                        </div>
+
+                                        <!-- Payout Info -->
+                                        <div class="mt-3">
+                                            <img src="Payout method.png" alt="">
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Graph -->
+                                    <div class="col-9">
+                                        <div class="active-user-graph d-flex justify-content-end">
+                                            <img src="active-user-graph.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- ================= STAT CARDS ================= -->
+                                <div class="row mt-5 cards g-3">
+
+                                    <!-- Card 1 -->
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <p class="card-title">
+                                                <img src="Users-icon.png" alt=""> Users
+                                            </p>
+                                            <div class="card-content">
+                                                <p>35K</p>
+                                                <img src="card-buttom-line.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <p class="card-title">
+                                                <img src="Clicks-icon.png" alt=""> Clicks
+                                            </p>
+                                            <div class="card-content">
+                                                <p>1m</p>
+                                                <img src="card-buttom-line.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <p class="card-title">
+                                                <img src="Sales-icon.png" alt=""> Sales
+                                            </p>
+                                            <div class="card-content">
+                                                <p>345$</p>
+                                                <img src="card-buttom-line.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 4 -->
+                                    <div class="col-md-3">
+                                        <div class="stat-card">
+                                            <p class="card-title">
+                                                <img src="Items-icon.png" alt=""> Items
+                                            </p>
+                                            <div class="card-content">
+                                                <p>88</p>
+                                                <img src="card-buttom-line.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
 
-                            <!-- Content Row -->
-                            <div class="row">
-
-                                <!-- Left Info -->
-                                <div class="col-3">
-
-                                    <!-- Page-View Count -->
-                                    <div class="page-view-count">
-                                        <p>300</p>
-                                    </div>
-
-                                    <!-- Page-View Label -->
-                                    <div class="page-view-count-lable">
-                                        <p>
-                                            <img src="page view icon.png" alt="">
-                                            Page views per minute
-                                        </p>
-                                    </div>
-
-                                    <!-- Payout Info -->
-                                    <div class="mt-3">
-                                        <img src="Payout method.png" alt="">
-                                    </div>
-
-                                </div>
-
-                                <!-- Graph -->
-                                <div class="col-9">
-                                    <div class="active-user-graph d-flex justify-content-end">
-                                        <img src="active-user-graph.png" alt="">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!-- ================= STAT CARDS ================= -->
-                            <div class="row mt-5 cards g-3">
-
-                                <!-- Card 1 -->
-                                <div class="col-md-3">
-                                    <div class="stat-card">
-                                        <p class="card-title">
-                                            <img src="Users-icon.png" alt=""> Users
-                                        </p>
-                                        <div class="card-content">
-                                            <p>35K</p>
-                                            <img src="card-buttom-line.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 2 -->
-                                <div class="col-md-3">
-                                    <div class="stat-card">
-                                        <p class="card-title">
-                                            <img src="Clicks-icon.png" alt=""> Clicks
-                                        </p>
-                                        <div class="card-content">
-                                            <p>1m</p>
-                                            <img src="card-buttom-line.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 3 -->
-                                <div class="col-md-3">
-                                    <div class="stat-card">
-                                        <p class="card-title">
-                                            <img src="Sales-icon.png" alt=""> Sales
-                                        </p>
-                                        <div class="card-content">
-                                            <p>345$</p>
-                                            <img src="card-buttom-line.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 4 -->
-                                <div class="col-md-3">
-                                    <div class="stat-card">
-                                        <p class="card-title">
-                                            <img src="Items-icon.png" alt=""> Items
-                                        </p>
-                                        <div class="card-content">
-                                            <p>88</p>
-                                            <img src="card-buttom-line.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
+                            <!-- ================= SALES BY AGE ================= -->
+                            <div class="sales-by-age">
+                                <img src="sales-by-age.png" alt="">
                             </div>
 
                         </div>
 
-                        <!-- ================= SALES BY AGE ================= -->
-                        <div class="sales-by-age">
-                            <img src="sales-by-age.png" alt="">
-                        </div>
-
-                    </div>
 
 
 
+                        <!-- ================= RIGHT COLUMN ================= -->
+                        <div class="col-3">
 
-                    <!-- ================= RIGHT COLUMN ================= -->
-                    <div class="col-3">
-
-                        <!-- Earning -->
-                        <div class="earning">
-                            <div class="earning-title">
-                                <h4>Your earning this month </h4>
-                            </div>
+                            <!-- Earning -->
+                            <div class="earning">
+                                <div class="earning-title">
+                                    <h4>Your earning this month </h4>
+                                </div>
 
 
-                            <div class="earning-amount">
-                                <h4>735.2$</h4>
-                            </div>
+                                <div class="earning-amount">
+                                    <h4>735.2$</h4>
+                                </div>
 
-                            <div class="earning-mini-lable">
-                                <p>Update your payout method in Setting</p>
-                            </div>
+                                <div class="earning-mini-lable">
+                                    <p>Update your payout method in Setting</p>
+                                </div>
 
-                            <div class="earning-withdraw">
-                                <div>
-                                    <p>Withdraw All Earnings</p>
+                                <div class="earning-withdraw">
+                                    <div>
+                                        <p>Withdraw All Earnings</p>
+                                    </div>
+
                                 </div>
 
                             </div>
+                            <!-- Earning-Item -->
 
-                        </div>
-                        <!-- Earning-Item -->
+                            <div class="earning-item">
+                                <div class="earning-item-title">
+                                    Earnings by item
 
-                        <div class="earning-item">
-                            <div class="earning-item-title">
-                                Earnings by item
+                                </div>
 
+
+                                <div class="item-list">
+
+                                    <!-- Item-1 -->
+                                    <div class="d-flex gap-2 align-items-center item-1">
+                                        <div class="earning-item-icon">
+                                            <img src="earning-item-1.png" alt="">
+                                        </div>
+
+                                        <div class="earning-item-name">
+                                            <h5 class="m-0">Bento 3D Kit </h5>
+                                            <h6 class="m-0">Illustration</h6>
+                                        </div>
+
+                                        <div class="earning-item-arrow-icon">
+                                            <img src="earninig-item-successive.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Item-2 -->
+                                    <div class="d-flex gap-2 align-items-center item-2">
+                                        <div class="earning-item-1-icon">
+                                            <img src="earning-item-2.png" alt="">
+                                        </div>
+
+                                        <div class="earning-item-name">
+                                            <h5 class="m-0">Bento 3D Kit </h5>
+                                            <h6 class="m-0">Coded Template</h6>
+                                        </div>
+
+                                        <div class="earning-item-arrow-icon">
+                                            <img src="earninig-item-successive.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Item-3 -->
+                                    <div class="d-flex gap-2 align-items-center item-3">
+                                        <div class="earning-item-icon">
+                                            <img src="earning-item-3.png" alt="">
+                                        </div>
+
+                                        <div class="earning-item-name">
+                                            <h5 class="m-0">Bento 3D Kit </h5>
+                                            <h6 class="m-0">Illustration</h6>
+                                        </div>
+
+                                        <div class="earning-item-arrow-icon">
+                                            <img src="earninig-item-successive.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
+                            <!-- Impression -->
 
-                            <div class="item-list">
-
-                                <!-- Item-1 -->
-                                <div class="d-flex gap-2 align-items-center item-1">
-                                    <div class="earning-item-icon">
-                                        <img src="earning-item-1.png" alt="">
-                                    </div>
-
-                                    <div class="earning-item-name">
-                                        <h5 class="m-0">Bento 3D Kit </h5>
-                                        <h6 class="m-0">Illustration</h6>
-                                    </div>
-
-                                    <div class="earning-item-arrow-icon">
-                                        <img src="earninig-item-successive.png" alt="">
-                                    </div>
-                                </div>
-
-                                <!-- Item-2 -->
-                                <div class="d-flex gap-2 align-items-center item-2">
-                                    <div class="earning-item-1-icon">
-                                        <img src="earning-item-2.png" alt="">
-                                    </div>
-
-                                    <div class="earning-item-name">
-                                        <h5 class="m-0">Bento 3D Kit </h5>
-                                        <h6 class="m-0">Coded Template</h6>
-                                    </div>
-
-                                    <div class="earning-item-arrow-icon">
-                                        <img src="earninig-item-successive.png" alt="">
-                                    </div>
-                                </div>
-
-                                <!-- Item-3 -->
-                                <div class="d-flex gap-2 align-items-center item-3">
-                                    <div class="earning-item-icon">
-                                        <img src="earning-item-3.png" alt="">
-                                    </div>
-
-                                    <div class="earning-item-name">
-                                        <h5 class="m-0">Bento 3D Kit </h5>
-                                        <h6 class="m-0">Illustration</h6>
-                                    </div>
-
-                                    <div class="earning-item-arrow-icon">
-                                        <img src="earninig-item-successive.png" alt="">
-                                    </div>
-                                </div>
+                            <div class="p-0">
+                                <img class="impression" src="impression-chart.png" alt="">
                             </div>
-                        </div>
-
-                        <!-- Impression -->
-
-                        <div class="p-0">
-                            <img class="impression" src="impression-chart.png" alt="">
                         </div>
                     </div>
                 </div>
