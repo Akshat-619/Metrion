@@ -1,89 +1,83 @@
-📊 Metrion Dashboard
+# 📊 Metrion Dashboard
 
-Metrion Dashboard is a modern, responsive front-end admin/dashboard UI built to demonstrate clean UI design, structured layouts, and smooth user interactions.
-The project focuses on presenting analytics-style visuals, dashboard widgets, and navigation patterns using static data and front-end techniques.
+**Metrion Dashboard** is a modern, responsive **front-end admin dashboard UI** built to showcase clean UI design, structured layouts, and smooth user interactions.
 
-This project is intended for UI/UX demonstration and portfolio use.
+The project focuses on **analytics-style visuals, dashboard widgets, and intuitive navigation patterns**, using static data and pure front-end techniques.
 
-✨ Features
+> 🚀 Built for **UI/UX demonstration** and **portfolio showcase**
 
-📌 Left Sidebar Navigation
+---
 
-Nested dropdown menus
+## ✨ Key Features
 
-Active state highlighting
+### 📌 Left Sidebar Navigation
+- Nested dropdown menus  
+- Active state highlighting  
+- Mini user profile card at the bottom  
 
-Mini user profile card at the bottom
+### 🧭 Top Navigation Bar
+- Search bar  
+- Profile, notification, and message icons  
+- Quick-action dropdown menus  
 
-🧭 Top Navigation Bar
+### 📈 Dashboard Widgets
+- Active users statistics  
+- Earnings overview  
+- Summary cards for:
+  - Users  
+  - Clicks  
+  - Sales  
+  - Items  
 
-Search bar
+### 📊 Charts & Visuals
+- Page views per minute  
+- Sales by age (line chart)  
+- Impression bar chart  
+- Earnings by item list  
 
-Profile, notification, and message icons
+### 🎨 UI Design
+- Clean white layout with **purple accent theme**  
+- Consistent spacing and typography  
+- Smooth hover interactions  
+- Responsive layout foundation  
 
-Dropdown menus for quick actions
+---
 
-📈 Dashboard Widgets
+## 🛠️ Tech Stack
 
-Active users statistics
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
+- **Bootstrap 5**
+- **Bootstrap Icons**
 
-Earnings overview
+---
 
-Cards for users, clicks, sales, and items
+## 📌 Project Scope
 
-📊 Charts & Visuals
-
-Page views per minute
-
-Sales by age line chart
-
-Impression bar chart
-
-Earnings by item list
-
-🎨 Modern UI Design
-
-Clean white layout with purple accent theme
-
-Structured spacing and typography
-
-Smooth hover interactions
-
-Responsive layout foundation
-
-🛠️ Tech Stack
-
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-Bootstrap 5
-
-Bootstrap Icons
-
-📌 Project Scope
-
-Front-end only project
-
-Static data used for visual representation
+- Front-end only project  
+- Static data used for visual representation  
 
 Built for:
+- UI/UX practice  
+- Dashboard layout experimentation  
+- Portfolio showcase  
 
-UI/UX practice
+---
 
-Dashboard layout experimentation
+## 📄 License
 
-Portfolio showcase
+This project is **open-source** and available under the **MIT License**.
 
-📄 License
+---
 
-This project is open-source and available under the MIT License.
+## 👤 Author
 
-👤 Author
+**Akshat Sharma**  
+UI Developer | Frontend Enthusiast  
 
-Akshat Sharma
-UI Developer | Frontend Enthusiast
+🔗 GitHub: [https://github.com/Akshat-619](https://github.com/Akshat-619)
 
-GitHub: https://github.com/Akshat-619
+---
+
+⭐ If you find this project useful, consider starring the repository.
