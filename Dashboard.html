@@ -13,7 +13,7 @@
 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Dashboard.css">
 
     <title>Metrion</title>
 </head>
@@ -35,50 +35,139 @@
                     </div>
 
                     <!-- Sidebar Menu -->
-                    <ul class="sidebar-menu m-0 p-0 w-100 pe-2 ps-0 list-unstyled">
+                 <ul class="sidebar-menu m-0 p-0 w-100 pe-2 ps-0 list-unstyled">
 
-                        <li class="active"> <a href="#"> <img src="home-icon.png" alt=""> Home <img
-                                    class="sidebar-open-icon" src="sidebar-open-icon.png" alt=""> </a>
-                            <ul class="list-unstyled child-menu">
-                                <li><a href="#dashboard">Dashboard</a></li>
-                                <li><a href="#analytics">Analytics</a></li>
-                            </ul>
-                        </li>
+    <!-- ================= HOME ================= -->
+    <li class="active">
+        <a href="#">
+            <img src="home-icon.png" alt="">
+            Home
+            <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+        </a>
 
+        <ul class="list-unstyled child-menu">
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+        </ul>
+    </li>
+    <!-- ================= PAGES ================= -->
+    <li>
+        <a href="#">
+            <img src="page-icon.png" alt="">
+            Pages
+            <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+        </a>
 
-                        <li>
-                            <a href="#">
-                                <img src="page-icon.png" alt="">
-                                Pages
-                                <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
-                            </a>
-                        </li>
+        <ul class="list-unstyled child-menu">
 
-                        <li>
-                            <a href="#">
-                                <img src="applications-icon.png" alt="">
-                                Applications
-                                <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
-                            </a>
-                        </li>
+            <!-- Profile -->
+            <li>
+                <a href="#">
+                    Profile
+                    <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+                </a>
+                <ul class="list-unstyled child-menu">
+                    <li><a href="#profile-overview">Profile overview</a></li>
+                    <li><a href="#teams">Teams</a></li>
+                    <li><a href="#all-projects">All Projects</a></li>
+                </ul>
+            </li>
 
-                        <li>
-                            <a href="#">
-                                <img src="e-commerce-icon.png" alt="">
-                                E-Commerce
-                                <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
-                            </a>
-                        </li>
+            <!-- User -->
+            <li>
+                <a href="#">
+                    User
+                    <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+                </a>
+                <ul class="list-unstyled child-menu">
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#new-user">New User</a></li>
+                </ul>
+            </li>
 
-                        <li>
-                            <a href="#">
-                                <img src="auth-icon.png" alt="">
-                                Authentication
-                                <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
-                            </a>
-                        </li>
+            <!-- Accounts -->
+            <li>
+                <a href="#">
+                    Accounts
+                    <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+                </a>
+                <ul class="list-unstyled child-menu">
+                    <li><a href="#setting">Setting</a></li>
+                    <li><a href="#billing">Billing</a></li>
+                    <li><a href="#invoice">Invoice</a></li>
+                    <li><a href="#security">Security</a></li>
+                </ul>
+            </li>
 
+            <!-- Projects -->
+            <li>
+                <a href="#">
+                    Projects
+                    <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+                </a>
+                <ul class="list-unstyled child-menu">
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#charts">Charts</a></li>
+                    <li><a href="#notification">Notification</a></li>
+                    <li><a href="#chat">Chat</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+    <!-- ================= APPLICATIONS ================= -->
+    <li>
+        <a href="#">
+            <img src="applications-icon.png" alt="">
+            Applications
+            <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+        </a>
+         <ul class="list-unstyled child-menu">
+            <li><a href="#kanban">Kanban</a></li>
+            <li><a href="#wizard">Wizard</a></li>
+            <li><a href="#data-tables">Data Tables</a></li>
+            <li><a href="#calendar">Calendar </a></li>
+         </ul>
+    </li>
+
+    <!-- ================= E-COMMERCE ================= -->
+    <li>
+        <a href="#">
+            <img src="e-commerce-icon.png" alt="">
+            E-Commerce
+            <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+        </a>
+        <ul class="list-unstyled child-menu">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="">Products</a>
+                <ul class="list-unstyled">
+                    <li><a href="#new-products">New Products</a></li>
+                    <li><a href="edit-products">Edit Products</a></li>
+                    <li><a href="product-list">Product List</a></li>
                     </ul>
+                    
+                
+            </li>
+            <li><a href="">Orders</a>
+                    <ul class="list-unstyled child-menu">
+                        <li><a href="order-list">Order List</a></li>
+                        <li><a href="order-details">Order Details</a></li>
+                    </ul>
+                    </li>   
+
+        </ul> 
+    </li>
+
+    <!-- ================= AUTH ================= -->
+    <li>
+        <a href="#">
+            <img src="auth-icon.png" alt="">
+            Authentication
+            <img class="sidebar-close-icon" src="sidebar-close-icon.png" alt="">
+        </a>
+    </li>
+
+</ul>
 
                     <!-- Sidebar User Card -->
                     <div class="mt-auto text-center pb-3 sb-user-card">
@@ -375,8 +464,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="script.js"></script>
-    <script src="charts.js"></script>
+    <script src="Dashboard.js"></script>
+    <script src="DashBoardCharts.js"></script>
 
 </body>
 
