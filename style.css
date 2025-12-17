@@ -77,10 +77,10 @@ body {
    HEADER
 ========================= */
 .header {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
   height: 80px;
-  
+
   background-color: white;
   border: 1px;
   border-color: #000;
@@ -89,13 +89,13 @@ body {
 .title {
   font-weight: 700;
   font-size: 20px;
-padding: 0;
+  padding: 0;
   color: #6E39CB;
   display: flex;
   align-items: center;
   gap: 100px;
   justify-content: space-between;
-  
+
 }
 
 
@@ -103,33 +103,34 @@ padding: 0;
    Nav-Icons
 ========================= */
 
-.nav-icon{
+.nav-icon {
   padding-right: 50px;
 }
 
-.message-icon, .notification-icon{
-  margin-left:20px ;
+.message-icon,
+.notification-icon {
+  margin-left: 20px;
 }
 
 
 .notification {
-    position: relative;
+  position: relative;
 }
 
 .notification-icon {
-    font-size: 22px;
-    color: #6E39CB;
-    cursor: pointer;
+  font-size: 22px;
+  color: #6E39CB;
+  cursor: pointer;
 
-    /* REQUIRED */
-    display: inline-block;
-    transform-origin: 50% 10%;
+  /* REQUIRED */
+  display: inline-block;
+  transform-origin: 50% 10%;
 }
 
 
 /* Animation class */
 .ring {
-    animation: bell-ring 0.9s ease-in-out;
+  animation: bell-ring 0.9s ease-in-out;
 }
 
 
@@ -140,9 +141,9 @@ padding: 0;
 .nav-profile,
 .notification,
 .nav-message {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* ================= ICON STYLES ================= */
@@ -150,70 +151,70 @@ padding: 0;
 .profile-icon,
 .notification-icon,
 .message-icon {
-    font-size: 22px;
-    color: #6E39CB;
-    cursor: pointer;
+  font-size: 22px;
+  color: #6E39CB;
+  cursor: pointer;
 }
 
 /* ================= DROPDOWN MENU ================= */
 
 .dropdown-menu {
-    min-width: 200px;
-    padding: 8px 0;
-    border-radius: 10px;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
-    border: none;
+  min-width: 200px;
+  padding: 8px 0;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  border: none;
 }
 
 /* ================= DROPDOWN ITEMS ================= */
 
 .dropdown-menu .dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
-    padding: 10px 16px;
-    font-size: 14px;
-    font-weight: 500;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
 
-    color: #6E39CB;
-    text-decoration: none;
+  color: #6E39CB;
+  text-decoration: none;
 
-    transition: background-color 0.2s ease,
-                transform 0.2s ease;
+  transition: background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 /* Icon inside dropdown */
 .dropdown-menu .dropdown-item i {
-    font-size: 16px;
-    min-width: 18px;
-    text-align: center;
+  font-size: 16px;
+  min-width: 18px;
+  text-align: center;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #f2ebff;
-    color: #6E39CB;
-    transform: translateX(3px);
+  background-color: #f2ebff;
+  color: #6E39CB;
+  transform: translateX(3px);
 }
 
 .dropdown-menu .dropdown-item:active,
 .dropdown-menu .dropdown-item:focus {
-    background-color: #f2ebff;
-    color: #6E39CB;
+  background-color: #f2ebff;
+  color: #6E39CB;
 }
 
 .notification .dropdown-menu {
-    min-width: 220px;
+  min-width: 220px;
 }
 
 .message-icon {
-    opacity: 0.85;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .message-icon:hover {
-    opacity: 1;
-    transform: translateY(-2px);
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 
@@ -251,25 +252,26 @@ padding: 0;
   pointer-events: none;
 }
 
-.main-container{
-  padding-bottom:50px;
+.main-container {
+  padding-bottom: 50px;
 }
+
 /* =========================
    SIDEBAR
 ========================= */
 .left-container {
   padding: 0;
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
   height: 100vh;
   background-color: #fff;
   border-right: 1px solid #E1E4EA;
   color: #3A3541;
-  overflow:auto;
+  overflow: auto;
 }
 
 /* Sidebar menu */
-.sidebar-menu > li {
+.sidebar-menu>li {
   padding-left: 21px;
 }
 
@@ -286,12 +288,12 @@ padding: 0;
   font-size: 18px;
 }
 
-.sidebar-menu > li.active > a {
+.sidebar-menu>li.active>a {
   background-color: #DECCFE;
   color: #6E39CB;
 }
 
-.sidebar-menu > li.active > a::before {
+.sidebar-menu>li.active>a::before {
   content: "";
   position: absolute;
   left: -21px;
@@ -316,10 +318,10 @@ padding: 0;
 /* User card */
 .sb-user-card {
   width: 178;
-height: 55;
-border-radius: 8px;
-opacity: 1;
- padding-bottom: 20px;
+  height: 55;
+  border-radius: 8px;
+  opacity: 1;
+  padding-bottom: 20px;
 }
 
 
@@ -327,7 +329,7 @@ opacity: 1;
    ACTIVE USER CARD
 ========================= */
 .active-user {
-  margin-top:70px;
+  margin-top: 30px;
   width: 100%;
   background: #fff;
   border-radius: 8px;
@@ -410,7 +412,7 @@ opacity: 1;
    SALES BY AGE
 ========================= */
 .sales-by-age {
-  margin-top:30px;
+  margin-top: 30px;
   width: 100%;
   background: white;
   border-radius: 8px;
@@ -419,7 +421,7 @@ opacity: 1;
 
 }
 
-.sales-by-age h4{
+.sales-by-age h4 {
   font-style: 20px;
   font-weight: 500;
 
@@ -431,116 +433,116 @@ opacity: 1;
 
 
 /* Earning */
-.earning{
-    width: 270px;
-    height: 344px;
-    margin-top: 70px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px 0px #00000026;
-    padding-left:10px ;
-padding-top:10px ;
-padding-bottom:10px ;
-padding-right:10px ;
-background-color: white;
+.earning {
+  width: 270px;
+  height: 344px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  background-color: white;
 }
 
-.earning-title{
-    font-size: 20.25px;
+.earning-title {
+  font-size: 20.25px;
 
-    font-weight: 500;
-    text-align: center;
-
-}
-
-
-.earning-amount{
-    
-    color: #6E39CB;
-    text-align: center;
+  font-weight: 500;
+  text-align: center;
 
 }
 
-.earning-amount h4{
-font-size: 64px;
-    font-weight: 700;
-    font-style: bold;
-        margin-top: 25px;
-}
 
-.earning-mini-lable{
-        font-size: 18px;
-        font-weight: 500;
-        color: #89868D;
-        text-align: center;
+.earning-amount {
+
+  color: #6E39CB;
+  text-align: center;
 
 }
 
-.earning-mini-lable p{
-    margin-top: 35px;
+.earning-amount h4 {
+  font-size: 64px;
+  font-weight: 700;
+  font-style: bold;
+  margin-top: 25px;
+}
+
+.earning-mini-lable {
+  font-size: 18px;
+  font-weight: 500;
+  color: #89868D;
+  text-align: center;
+
+}
+
+.earning-mini-lable p {
+  margin-top: 35px;
 }
 
 
-.earning-withdraw{
-font-weight: 500;
-font-style: Medium;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
+.earning-withdraw {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .earning-withdraw button {
-    margin-top: 15px;
-    padding: 10px 18px;
-    color: #6E39CB;
-    background-color: white;
-    border: 1px solid #6E39CB;
-    border-radius: 10px;
-    cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 18px;
+  color: #6E39CB;
+  background-color: white;
+  border: 1px solid #6E39CB;
+  border-radius: 10px;
+  cursor: pointer;
 
-    /* Smooth animation */
-    transition: 
-        background-color 0.35s ease,
-        color 0.35s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+  /* Smooth animation */
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .earning-withdraw button:hover {
-    color: white;
-    background-color: #6E39CB;
-    border-color:1px solid white;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(110, 57, 203, 0.35);
+  color: white;
+  background-color: #6E39CB;
+  border-color: 1px solid white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(110, 57, 203, 0.35);
 }
 
 .withdraw-icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 
 /* Earning-Item */
-.earning-item{
- width: 270px;
-    height: 344px;
-    margin-top: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 4px 0px #00000026;
-    padding-left:30px ;
-padding-top:30px ;
-padding-bottom:30px ;
-padding-right:30px ;
-background-color: white;
+.earning-item {
+  width: 270px;
+  height: 344px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  background-color: white;
 }
 
-.earning-item-title{
+.earning-item-title {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 500;
 }
 
 
-.earning-item-name h5{
+.earning-item-name h5 {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -549,18 +551,19 @@ background-color: white;
   color: #3A3541;
 }
 
-.earning-item-name h6{
+.earning-item-name h6 {
   font-size: 14px;
   color: #89868D;
-  
+
 }
 
-.earning-item-arrow-icon{
+.earning-item-arrow-icon {
   margin-left: 20px;
 }
 
- .item-2, .item-3{
-margin-top:40px;
+.item-2,
+.item-3 {
+  margin-top: 40px;
 }
 
 
@@ -585,7 +588,7 @@ margin-top:40px;
 
 /* FIXED CHART SIZE */
 #impression-bar-graph {
- margin-top: 35px;
+  margin-top: 35px;
 }
 
 
@@ -593,15 +596,43 @@ margin-top:40px;
 
 /* Ring animation */
 @keyframes bell-ring {
-    0%   { transform: rotate(0); }
-    10%  { transform: rotate(15deg); }
-    20%  { transform: rotate(-15deg); }
-    30%  { transform: rotate(12deg); }
-    40%  { transform: rotate(-12deg); }
-    50%  { transform: rotate(8deg); }
-    60%  { transform: rotate(-8deg); }
-    70%  { transform: rotate(4deg); }
-    80%  { transform: rotate(-4deg); }
-    100% { transform: rotate(0); }
-}
+  0% {
+    transform: rotate(0);
+  }
 
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(12deg);
+  }
+
+  40% {
+    transform: rotate(-12deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+
+  60% {
+    transform: rotate(-8deg);
+  }
+
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
