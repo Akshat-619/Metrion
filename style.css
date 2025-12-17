@@ -99,7 +99,9 @@ padding: 0;
 }
 
 
-/* nav-icons */
+/* =========================
+   Nav-Icons
+========================= */
 
 .nav-icon{
   padding-right: 50px;
@@ -108,6 +110,112 @@ padding: 0;
 .message-icon, .notification-icon{
   margin-left:20px ;
 }
+
+
+.notification {
+    position: relative;
+}
+
+.notification-icon {
+    font-size: 22px;
+    color: #6E39CB;
+    cursor: pointer;
+
+    /* REQUIRED */
+    display: inline-block;
+    transform-origin: 50% 10%;
+}
+
+
+/* Animation class */
+.ring {
+    animation: bell-ring 0.9s ease-in-out;
+}
+
+
+/* Profile-Drop-Down */
+
+/* ================= NAV ICONS ================= */
+
+.nav-profile,
+.notification,
+.nav-message {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ================= ICON STYLES ================= */
+
+.profile-icon,
+.notification-icon,
+.message-icon {
+    font-size: 22px;
+    color: #6E39CB;
+    cursor: pointer;
+}
+
+/* ================= DROPDOWN MENU ================= */
+
+.dropdown-menu {
+    min-width: 200px;
+    padding: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border: none;
+}
+
+/* ================= DROPDOWN ITEMS ================= */
+
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #6E39CB;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+/* Icon inside dropdown */
+.dropdown-menu .dropdown-item i {
+    font-size: 16px;
+    min-width: 18px;
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f2ebff;
+    color: #6E39CB;
+    transform: translateX(3px);
+}
+
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #f2ebff;
+    color: #6E39CB;
+}
+
+.notification .dropdown-menu {
+    min-width: 220px;
+}
+
+.message-icon {
+    opacity: 0.85;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.message-icon:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
 
 /* =========================
    SEARCH BAR
@@ -120,7 +228,7 @@ padding: 0;
 }
 
 .input {
-  width: 220px;
+  width: 350px;
   height: 35px;
   padding-left: 40px;
   border-radius: 30px;
@@ -256,13 +364,7 @@ opacity: 1;
   width: 18px;
 }
 
-/* =========================
-   ACTIVE USER GRAPH
-========================= */
-.active-user-graph img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* =========================
    STAT CARDS
@@ -317,9 +419,10 @@ opacity: 1;
 
 }
 
-.sales-by-age img {
-  width: 100%;
-  height: auto;
+.sales-by-age h4{
+  font-style: 20px;
+  font-weight: 500;
+
 }
 
 /* =========================
@@ -386,9 +489,35 @@ letter-spacing: 0%;
 text-align: center;
 }
 
-.earning-withdraw p{
-    margin-top: 35px;
+.earning-withdraw button {
+    margin-top: 15px;
+    padding: 10px 18px;
+    color: #6E39CB;
+    background-color: white;
+    border: 1px solid #6E39CB;
+    border-radius: 10px;
+    cursor: pointer;
+
+    /* Smooth animation */
+    transition: 
+        background-color 0.35s ease,
+        color 0.35s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
+
+.earning-withdraw button:hover {
+    color: white;
+    background-color: #6E39CB;
+    border-color:1px solid white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(110, 57, 203, 0.35);
+}
+
+.withdraw-icon {
+    margin-left: 6px;
+}
+
 
 /* Earning-Item */
 .earning-item{
@@ -436,22 +565,43 @@ margin-top:40px;
 
 
 /* Impression */
-.impression{
+.impression {
   width: 270px;
-height: 287px;
- margin-top: 40px;
-    margin-bottom: 10px;
-border-radius: 8px;
-opacity: 1;
-box-shadow: 0px 0px 4px 0px #00000026;
-background-color: white;
-
+  height: 287px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+  background-color: white;
 }
 
-.impression h4{
+.impression h4 {
   font-size: 20px;
   font-weight: 500;
+  margin-top: 15px;
+  margin-left: 30px;
+  padding-top: 15px;
+}
+
+/* FIXED CHART SIZE */
+#impression-bar-graph {
+ margin-top: 35px;
 }
 
 
+/* Key Frames */
+
+/* Ring animation */
+@keyframes bell-ring {
+    0%   { transform: rotate(0); }
+    10%  { transform: rotate(15deg); }
+    20%  { transform: rotate(-15deg); }
+    30%  { transform: rotate(12deg); }
+    40%  { transform: rotate(-12deg); }
+    50%  { transform: rotate(8deg); }
+    60%  { transform: rotate(-8deg); }
+    70%  { transform: rotate(4deg); }
+    80%  { transform: rotate(-4deg); }
+    100% { transform: rotate(0); }
+}
 
